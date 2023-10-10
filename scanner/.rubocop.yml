@@ -1,0 +1,11 @@
+require:
+  - rubocop-rails
+  - rubocop-capybara
+  - rubocop-factory_bot
+  - rubocop-rspec
+
+AllCops:
+  ActiveSupportExtensionsEnabled: true
+
+Style/Documentation:
+  Enabled: false
