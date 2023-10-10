@@ -310,7 +310,7 @@ DEPENDENCIES
   puma (>= 5.0)
   rails (~> 7.1.0)
   redis (>= 4.0.1)
-  rspec-rails
+  rspec-rails (~> 6.0)
   rubocop-capybara
   rubocop-factory_bot
   rubocop-rails (~> 2.21)
