@@ -1,0 +1,21 @@
+<h1>Scans</h1>
+
+<ul>
+  <% @scans.each do |scan| %>
+    <li>
+      <%= scan.from %>
+    </li>
+    <li>
+      <%= scan.to %>
+    </li>
+    <li>
+      <%= scan.user_id %>
+    </li>
+    <li>
+      <%= scan.receiver_email %>
+    </li>
+    <li>
+      <%= scan.created_at %>
+    </li>
+  <% end %>
+</ul>
