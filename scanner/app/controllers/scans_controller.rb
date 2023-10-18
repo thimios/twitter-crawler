@@ -2,17 +2,17 @@
 
 class ScansController < ApplicationController
   def index
-    @scans = ListScans.run!
+    @scans = Scans::List.run!
   end
 
   # GET /accounts/new
   def new
-    @account = CreateScan.new
+    @scan = Scans::Create.to_model
   end
 
   # POST /scans
   def create
-    outcome = CreateScan.run(params.fetch(:scan, {}))
+    outcome = Scans::Create.run(params.fetch(:scan, {}))
 
     if outcome.valid?
       redirect_to(outcome.result)
